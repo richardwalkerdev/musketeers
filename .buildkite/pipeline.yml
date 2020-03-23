@@ -1,0 +1,5 @@
+steps:
+    - label: "Hello World"
+      name: "hello-world"
+      command:
+        - make echo
