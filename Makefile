@@ -13,4 +13,4 @@ echo:
 compare: 
 	docker-compose run --rm alpine echo "Comparing versions."
 	docker-compose run --rm alpine echo $(ACCOUNT_PATH)
-	docker-compose run --rm alpine --entrypoint="/bin/bash" ./scripts/compare-versions.sh 
+	docker-compose run --rm alpine --entrypoint="/bin/sh" ./scripts/compare-versions.sh 

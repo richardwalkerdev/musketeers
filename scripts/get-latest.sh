@@ -1,10 +1,5 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/sh
 
-# pass in --version-only as first arg to not download
-# will come back to this and make it less lazy
-
-#ACCOUNT_PATH='/opt/app'
 echo "ACCOUNT_PATH = ${ACCOUNT_PATH}"
 
 LATEST="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest-4.3/release.txt"
