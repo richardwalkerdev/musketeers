@@ -1,8 +1,8 @@
 CURRENT_UID := $(shell id -u)
 
-DOCKER_COMPOSE := docker-compose run --user="$(CURRENT_UID)"
+DOCKER_COMPOSE := docker-compose run --rm alpine --user="$(CURRENT_UID)"
 
-AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash" aws
+AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash"
 
 #ACCOUNT_PATH='test'
 
