@@ -11,4 +11,4 @@ echo:
 compare: 
 	docker-compose run --rm musketeers echo "Comparing versions."
 	docker-compose run --rm musketeers echo $(ACCOUNT_PATH)
-	docker-compose run --rm musketeers --entrypoint="/bin/sh" ./scripts/compare-versions.sh 
+	docker-compose run --rm musketeers ./scripts/compare-versions.sh 
