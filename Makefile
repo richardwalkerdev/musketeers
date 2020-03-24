@@ -9,7 +9,6 @@ AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash" aws
 echo:
 	docker-compose run --rm alpine echo 'OpenShift Pipeline'
 
-.PHONY: compare
 compare: 
 	echo "Comparing versions."
 	$(AWS_BASH) ./scripts/compare-versions.sh
