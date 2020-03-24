@@ -1,14 +1,12 @@
 # ACCOUNT_PATH is set as an Environment Variable under Buildkite Pipeline Settings
 # ACCOUNT_PATH='/opt/app'
 
-IMAGE="flemay/musketeers"
-
 DOCKER_COMPOSE := docker-compose run --rm flemay/musketeers --user="$(CURRENT_UID)"
 
 AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash"
 
 echo:
-	docker-compose run --rm flemay/musketeers echo 'OpenShift Pipeline'
+	docker-compose run echo 'OpenShift Pipeline'
 
 compare: 
 	docker-compose run --rm flemay/musketeers echo "Comparing versions."
