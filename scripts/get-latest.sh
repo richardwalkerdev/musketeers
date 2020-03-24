@@ -4,7 +4,7 @@ set -e
 # pass in --version-only as first arg to not download
 # will come back to this and make it less lazy
 
-ACCOUNT_PATH='/home/ec2-user'
+ACCOUNT_PATH='/test'
 
 
 LATEST="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest-4.3/release.txt"
