@@ -10,6 +10,6 @@ echo:
 	docker-compose run --rm alpine echo 'OpenShift Pipeline'
 
 compare: 
-	echo "Comparing versions."
-	echo $(ACCOUNT_PATH)
+	docker-compose run --rm alpine echo "Comparing versions."
+	docker-compose run --rm alpine echo $(ACCOUNT_PATH)
 	#./scripts/compare-versions.sh
