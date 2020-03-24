@@ -3,3 +3,7 @@ steps:
       name: "hello-world"
       command:
         - make echo
+    - label: "Compare OCP Versions"
+      name: "compare-ocp-versions"
+      command:
+        - make compare
