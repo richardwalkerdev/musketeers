@@ -5,5 +5,5 @@ services:
     command: bash
     env_file: .env
     volumes:
-      - .:/opt/app:/opt/app
+      - .:/opt/app/opt/app:rw
     working_dir: /opt/app
