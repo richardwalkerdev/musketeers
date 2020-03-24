@@ -12,4 +12,4 @@ echo:
 compare: 
 	echo "Comparing versions."
 	echo "ACCOUNT_PATH = ${ACCOUNT_PATH}"
-	./scripts/compare-versions.sh
+	#./scripts/compare-versions.sh
