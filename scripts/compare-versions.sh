@@ -10,7 +10,7 @@ echo $LATEST_VERSION > latest-version.txt
 echo $LATEST_VERSION > ${ACCOUNT_PATH}/test
 
 # Get current version
-CURRENT_VERSION=`/home/ec2-user/bin/openshift-install version | head -n 1 | awk '{print $2}' | sed 's/ *v *//g'`
+CURRENT_VERSION=`/opt/app/test/openshift-install version | head -n 1 | awk '{print $2}' | sed 's/ *v *//g'`
 
 
 echo $CURRENT_VERSION > current-version.txt
