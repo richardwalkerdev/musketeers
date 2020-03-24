@@ -6,7 +6,7 @@ DOCKER_COMPOSE := docker-compose run --rm flemay/musketeers --user="$(CURRENT_UI
 AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash"
 
 echo:
-	docker-compose run echo 'OpenShift Pipeline'
+	docker-compose run --entrypoint="/bin/bash" echo 'OpenShift Pipeline'
 
 compare: 
 	docker-compose run --rm flemay/musketeers echo "Comparing versions."
