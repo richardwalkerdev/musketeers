@@ -7,7 +7,7 @@ LATEST="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest-4.3/rel
 LATEST_VERSION=`curl -s ${LATEST} | grep Version: | sed 's/ *Version: *//g'`
 
 echo $LATEST_VERSION > latest-version.txt
-echo $LATEST_VERSION > ${ACCOUNT_PATH}/test
+echo $LATEST_VERSION > ${ACCOUNT_PATH}/test.txt
 
 # Get current version
 CURRENT_VERSION=`/opt/app/test/openshift-install version | head -n 1 | awk '{print $2}' | sed 's/ *v *//g'`
