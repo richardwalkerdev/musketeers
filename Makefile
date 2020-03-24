@@ -9,6 +9,6 @@ echo:
 	docker-compose run --rm musketeers echo 'OpenShift Pipeline'
 
 compare: 
-	docker-compose run --rm flemay/musketeers echo "Comparing versions."
-	docker-compose run --rm flemay/musketeers echo $(ACCOUNT_PATH)
-	docker-compose run --rm flemay/musketeers --entrypoint="/bin/sh" ./scripts/compare-versions.sh 
+	docker-compose run --rm musketeers echo "Comparing versions."
+	docker-compose run --rm musketeers echo $(ACCOUNT_PATH)
+	docker-compose run --rm musketeers --entrypoint="/bin/sh" ./scripts/compare-versions.sh 
