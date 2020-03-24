@@ -11,6 +11,5 @@ echo:
 
 compare: 
 	echo "Comparing versions."
-	echo "ACCOUNT_PATH from Buildkite Environment Variables:" 
-	echo $(ACCOUNT_PATH)"
+	echo $(ACCOUNT_PATH)
 	#./scripts/compare-versions.sh
