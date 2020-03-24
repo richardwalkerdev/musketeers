@@ -11,4 +11,5 @@ echo:
 
 compare: 
 	echo "Comparing versions."
-	$(AWS_BASH) ./scripts/compare-versions.sh
+	echo "ACCOUNT_PATH = ${ACCOUNT_PATH}"ß
+	./scripts/compare-versions.sh
