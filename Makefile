@@ -4,6 +4,8 @@ DOCKER_COMPOSE := docker-compose run --user="$(CURRENT_UID)"
 
 AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash" aws
 
+ACCOUNT_PATH='/home/ec2-user'
+
 echo:
 	docker-compose run --rm alpine echo 'OpenShift Pipeline'
 
