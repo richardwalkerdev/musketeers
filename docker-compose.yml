@@ -2,6 +2,6 @@ version: '3'
 services:
   alpine:
     image: alpine
-    working_dir: /home/ec2-user
+    working_dir: /opt/app
     volumes:
-      - .:/home/ec2-user/app:rw
+      - .:/opt/app:rw
