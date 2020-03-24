@@ -1,7 +1,7 @@
 version: '3'
 services:
   alpine:
-    image: alpine
+    image: flemay/musketeers
     working_dir: /opt/app
     volumes:
       - .:/opt/app:rw
