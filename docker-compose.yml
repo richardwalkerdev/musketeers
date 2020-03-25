@@ -9,4 +9,4 @@ services:
       - type: bind
         source: /opt/app
         target: /opt/app
-    # working_dir: /opt/app
+    working_dir: /opt/app
