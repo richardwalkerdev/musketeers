@@ -3,9 +3,9 @@
 
 COMPOSE_SERVICE='my-alpine'
 
-DOCKER_COMPOSE := docker-compose run --rm $(COMPOSE_SERVICE) --user="$(CURRENT_UID)"
+# DOCKER_COMPOSE := docker-compose run --rm $(COMPOSE_SERVICE) --user="$(CURRENT_UID)"
 
-AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash"
+# AWS_BASH := $(DOCKER_COMPOSE) --entrypoint="/bin/bash"
 
 echo:
 	docker-compose run --rm $(COMPOSE_SERVICE) echo 'OpenShift Pipeline'
