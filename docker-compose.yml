@@ -6,7 +6,7 @@ services:
     command: bash
     env_file: .env
     volumes:
-      - type: volume
-        source: /opt/app
+      - type: bind
+        source: ./opt/app
         target: /opt/app
     working_dir: /opt/app
