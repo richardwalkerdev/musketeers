@@ -2,7 +2,7 @@
 # ACCOUNT_PATH='/opt/app'
 
 #CONTAINER_IMAGE='rw/alpine-test'
-CONTAINER_IMAGE='flemay/musketeers'
+CONTAINER_IMAGE='musketeers'
 
 DOCKER_COMPOSE := docker-compose run --rm $(CONTAINER_IMAGE) --user="$(CURRENT_UID)"
 
