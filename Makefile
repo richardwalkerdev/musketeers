@@ -1,8 +1,8 @@
 # ACCOUNT_PATH is set as an Environment Variable under Buildkite Pipeline Settings
 # ACCOUNT_PATH='/opt/app'
 
-#CONTAINER_IMAGE='rw/alpine-test'
-CONTAINER_IMAGE='musketeers'
+CONTAINER_IMAGE='alpine-test'
+#CONTAINER_IMAGE='musketeers'
 
 DOCKER_COMPOSE := docker-compose run --rm $(CONTAINER_IMAGE) --user="$(CURRENT_UID)"
 
