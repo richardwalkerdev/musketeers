@@ -13,4 +13,4 @@ echo:
 compare: 
 	docker-compose run --rm $(COMPOSE_SERVICE) echo "Comparing versions."
 	docker-compose run --rm $(COMPOSE_SERVICE) echo $(ACCOUNT_PATH)
-	docker-compose run --rm $(COMPOSE_SERVICE) --entrypoint="/bin/bash" "./scripts/compare-versions.sh" 
+	docker-compose run --rm $(COMPOSE_SERVICE) ./scripts/compare-versions.sh 
