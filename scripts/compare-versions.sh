@@ -10,7 +10,7 @@ echo "ACCOUNT_PATH = ${ACCOUNT_PATH}"
 
 LATEST="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest-4.3/release.txt"
 
-LATEST_VERSION=`curl -o /opt/temp/openshift-install -s ${LATEST} | grep Version: | sed 's/ *Version: *//g'`
+LATEST_VERSION=`curl -s ${LATEST} | grep Version: | sed 's/ *Version: *//g'`
 
 echo $LATEST_VERSION > /opt/temp/latest-version.txt
 
