@@ -7,6 +7,6 @@ services:
     env_file: .env
     volumes:
       - type: bind
-        source: .
+        source: /opt/app
         target: /opt/app
     working_dir: /opt/app
