@@ -10,6 +10,6 @@ services:
         source: .
         target: /opt/app
       - type: bind
-        source: /opt/temp
-        target: /opt/temp
+        source: /opt/openshift-installations
+        target: /opt/openshift-installations
     working_dir: /opt/app

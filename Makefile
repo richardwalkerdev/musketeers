@@ -11,6 +11,6 @@ echo:
 	docker-compose run --rm $(COMPOSE_SERVICE) echo 'OpenShift Pipeline'
 
 compare: 
-	docker-compose run --rm $(COMPOSE_SERVICE) echo "Comparing versions."
-	docker-compose run --rm $(COMPOSE_SERVICE) echo $(ACCOUNT_PATH)
+	docker-compose run --rm $(COMPOSE_SERVICE) echo "Comparing versions"
+	docker-compose run --rm $(COMPOSE_SERVICE) echo "ACCOUNT_PATH = $(ACCOUNT_PATH)"
 	docker-compose run --rm $(COMPOSE_SERVICE) ./scripts/compare-versions.sh 
