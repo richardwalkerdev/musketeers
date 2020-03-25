@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "SOME TEXT" > /opt/app/testing.txt
+echo "SOME TEXT opt app" > /opt/app/testing1.txt
+echo "some text" > testing2.txt
 
 # echo "ACCOUNT_PATH = ${ACCOUNT_PATH}"
 
