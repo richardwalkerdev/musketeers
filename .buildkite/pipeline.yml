@@ -1,6 +1,6 @@
 steps:
-    - label: "Hello World"
-      name: "hello-world"
+    - label: "Smoke Test Message"
+      name: "smoke-test-message"
       command:
         - make echo
     - label: "Compare OCP Versions"
